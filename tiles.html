@@ -1,0 +1,289 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="icon.jpg">
+	<title>Tile Game</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+    		var count = 0;
+    		var score = 0;
+    		var src1;
+    		var src2;
+    		var id1;
+    		var im1;
+    		$("#score").html("Score: "+score);	
+    		$("#div1").click(function(){
+        		$("#div1").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img1').attr('src');
+        			id1 = "#div1";
+        			im1 = "#img1";
+        		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img1').attr('src');
+        			if(src1==src2){
+        				$("#img1").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div1").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+    		$("#div2").click(function(){
+        		$("#div2").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img2').attr('src');
+        			id1 = "#div2";
+        			im1 = "#img2";
+        		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img2').attr('src');
+        			if(src1==src2){
+        				$("#img2").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div2").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+    		$("#div3").click(function(){
+        		$("#div3").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img3').attr('src');
+        			id1 = "#div3";
+        			im1 = "#img3";
+        		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img3').attr('src');
+        			if(src1==src2){
+        				$("#img3").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div3").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+    		$("#div4").click(function(){
+        		$("#div4").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img4').attr('src');
+        			id1 = "#div4";
+        			im1 = "#img4";
+        		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img4').attr('src');
+        			if(src1==src2){
+        				$("#img4").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div4").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+    		$("#div5").click(function(){
+        		$("#div5").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img5').attr('src');
+        			id1 = "#div5";
+        			im1 = "#img5";
+        		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img5').attr('src');
+        			if(src1==src2){
+        				$("#img5").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div5").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+    		$("#div6").click(function(){
+        		$("#div6").fadeToggle();
+        		count++;
+        		if(count==1){
+        			src1 = $('#img6').attr('src');
+        			id1 = "#div6";
+        			im1 = "#img6";
+           		}
+        		if(count==2){
+        			count=0;
+        			src2 = $('#img6').attr('src');
+        			if(src1==src2){
+        				$("#img6").fadeOut();
+        				$(im1).fadeOut();
+        				score++;
+        			}
+        			else{
+        				$("#div6").fadeToggle();
+        				$(id1).fadeToggle();
+        				score--;
+        			}
+        			$("#score").html("Score: "+score);
+        		}
+    		});
+		});
+
+</script>
+	<style type="text/css">
+		#div1{
+			background-color:red;
+			position: absolute;
+			top:200px;
+			left: 600px;
+			width: 50px;
+			height: 50px; 
+		}
+		#div2{
+			background-color:red;
+			position: absolute;
+			top:200px;
+			left: 660px;
+			width: 50px;
+			height: 50px; 
+		}
+		#div3{
+			background-color:red;
+			position: absolute;
+			top:200px;
+			left: 720px;
+			width: 50px;
+			height: 50px; 
+		}
+		#div4{
+			background-color:red;
+			position: absolute;
+			top:260px;
+			left: 600px;
+			width: 50px;
+			height: 50px; 
+		}
+		#div5{
+			background-color:red;
+			position: absolute;
+			top:260px;
+			left: 660px;
+			width: 50px;
+			height: 50px; 
+		}
+		#div6{
+			background-color:red;
+			position: absolute;
+			top:260px;
+			left: 720px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img1{
+			position: absolute;
+			top:200px;
+			left: 600px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img2{
+			position: absolute;
+			top:200px;
+			left: 660px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img3{
+			position: absolute;
+			top:200px;
+			left: 720px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img4{
+			position: absolute;
+			top:260px;
+			left: 600px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img5{
+			position: absolute;
+			top:260px;
+			left: 660px;
+			width: 50px;
+			height: 50px; 
+		}
+		#img6{
+			position: absolute;
+			top:260px;
+			left: 720px;
+			width: 50px;
+			height: 50px; 
+		}
+		#score{
+			position: absolute;
+			top:340px;
+			left: 640px;
+			font-size: 30px;
+			color: blue;
+		}
+		#name{
+			position: absolute;
+			top:30px;
+			left: 560;
+			font-size: 60px;
+			color: blue;
+			background-color:yellow; 
+		}
+	</style>
+</head>
+<body>
+	<img id="img1" src="1.jpg">
+	<img id="img2" src="2.jpg">
+	<img id="img3" src="1.jpg">
+	<img id="img4" src="2.jpg">
+	<img id="img5" src="3.jpg">
+	<img id="img6" src="3.jpg">
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+	<div id="div5"></div>
+	<div id="div6"></div>
+	<p id="score"></p>
+	<div id="name">Tile Game</div>
+	<p>Refresh Page to Restart Game</p>
+	<p>Click on the tiles to play</p>
+
+</body>
+</html>
